@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/степан/ontologies/2026/8/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/степан/ontologies/2026/8/untitled-ontology-13">
+    <Prefix name="" IRI="http://www.semanticweb.org/степан/ontologies/2026/8/untitled-ontology-13/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CelestialBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Star"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#orbits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Callisto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deimos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ganymede"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Io"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jupiter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neptune"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phobos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rhea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saturn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Titan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uranus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Venus"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Planet"/>
+        <Class IRI="#CelestialBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satellite"/>
+        <Class IRI="#CelestialBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Star"/>
+        <Class IRI="#CelestialBody"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Callisto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Deimos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Earth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Europa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Ganymede"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Io"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Jupiter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Mars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Mercury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Moon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Neptune"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Phobos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Rhea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Saturn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Star"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satellite"/>
+        <NamedIndividual IRI="#Titan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Uranus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#Venus"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Callisto"/>
+        <NamedIndividual IRI="#Jupiter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Deimos"/>
+        <NamedIndividual IRI="#Mars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Earth"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Europa"/>
+        <NamedIndividual IRI="#Jupiter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Ganymede"/>
+        <NamedIndividual IRI="#Jupiter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Io"/>
+        <NamedIndividual IRI="#Jupiter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Jupiter"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Mars"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Mercury"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Moon"/>
+        <NamedIndividual IRI="#Earth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Neptune"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Phobos"/>
+        <NamedIndividual IRI="#Mars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Rhea"/>
+        <NamedIndividual IRI="#Saturn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Saturn"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Titan"/>
+        <NamedIndividual IRI="#Saturn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Uranus"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#orbits"/>
+        <NamedIndividual IRI="#Venus"/>
+        <NamedIndividual IRI="#Sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#orbits"/>
+        <Class IRI="#CelestialBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#orbits"/>
+        <Class IRI="#CelestialBody"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
