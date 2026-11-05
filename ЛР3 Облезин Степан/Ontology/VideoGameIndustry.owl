@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="https://example.org/videogame-industry#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#GameMode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Игровой режим</rdfs:label>
+    <rdfs:label xml:lang="en">GameMode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#sequelTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:label xml:lang="ru">является продолжением</rdfs:label>
+    <rdfs:label xml:lang="en">sequelTo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#HeroShooterGenre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#HeroShooter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Геройский шутер</rdfs:label>
+    <rdfs:label xml:lang="en">HeroShooterGenre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#RiotPublisher">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Riot Games</rdfs:label>
+    <rdfs:label xml:lang="en">RiotPublisher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#availableOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#Platform"/>
+    <rdfs:label xml:lang="ru">доступна на платформе</rdfs:label>
+    <rdfs:label xml:lang="en">availableOn</rdfs:label>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#supportsGame"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Geralt">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Character"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Геральт</rdfs:label>
+    <rdfs:label xml:lang="en">Geralt</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#PuzzleGenre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Puzzle"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Головоломка</rdfs:label>
+    <rdfs:label xml:lang="en">PuzzleGenre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#hasMode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#GameMode"/>
+    <rdfs:label xml:lang="ru">поддерживает режим</rdfs:label>
+    <rdfs:label xml:lang="en">hasMode</rdfs:label>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#modeOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#EldenRing">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Elden Ring</rdfs:label>
+    <rdfs:label xml:lang="en">EldenRing</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#FromSoftware"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#BandaiNamco"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#ActionRPGGenre"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#AdventureGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PlayStation5"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#XboxSeriesXS"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#SinglePlayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#MultiplayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#CooperativeMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="ru">Онтология индустрии видеоигр</rdfs:label>
+    <rdfs:comment xml:lang="ru">Учебная модель видеоигр, жанров, студий, издателей, платформ, персонажей и режимов.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#publishedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdfs:label xml:lang="ru">издана</rdfs:label>
+    <rdfs:label xml:lang="en">publishedBy</rdfs:label>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#publishesGame"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Portal2">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Portal 2</rdfs:label>
+    <rdfs:label xml:lang="en">Portal2</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#Valve"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#ValvePublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#PuzzleGenre"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#AdventureGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#NintendoSwitch"/>
+    <hasCharacter rdf:resource="https://example.org/videogame-industry#Chell"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#SinglePlayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#CooperativeMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#supportsGame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#Platform"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#availableOn"/>
+    <rdfs:label xml:lang="en">supportsGame</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#modeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#GameMode"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#hasMode"/>
+    <rdfs:label xml:lang="en">modeOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#RiotGames">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Riot Games</rdfs:label>
+    <rdfs:label xml:lang="en">RiotGames</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Minecraft">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Minecraft</rdfs:label>
+    <rdfs:label xml:lang="en">Minecraft</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#MojangStudios"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#MojangPublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#SandboxGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PlayStation5"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#XboxSeriesXS"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#NintendoSwitch"/>
+    <hasCharacter rdf:resource="https://example.org/videogame-industry#Steve"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#SinglePlayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#MultiplayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#CooperativeMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Competitive">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Multiplayer"/>
+    <rdfs:label xml:lang="ru">Соревновательный режим</rdfs:label>
+    <rdfs:label xml:lang="en">Competitive</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#developsGame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#developedBy"/>
+    <rdfs:label xml:lang="en">developsGame</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Valorant">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">VALORANT</rdfs:label>
+    <rdfs:label xml:lang="en">Valorant</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2020</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#RiotGames"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#RiotPublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#TacticalShooterGenre"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#HeroShooterGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#MultiplayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#CompetitiveMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#releaseYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:label xml:lang="ru">год выхода</rdfs:label>
+    <rdfs:label xml:lang="en">releaseYear</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#CDProjektRed">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">CD Projekt Red</rdfs:label>
+    <rdfs:label xml:lang="en">CDProjektRed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#MOBA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">MOBA</rdfs:label>
+    <rdfs:label xml:lang="en">MOBA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Steve">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Character"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Стив</rdfs:label>
+    <rdfs:label xml:lang="en">Steve</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Жанр</rdfs:label>
+    <rdfs:label xml:lang="en">Genre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Sandbox">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">Песочница</rdfs:label>
+    <rdfs:label xml:lang="en">Sandbox</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Cyberpunk2077">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Cyberpunk 2077</rdfs:label>
+    <rdfs:label xml:lang="en">Cyberpunk2077</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2020</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#CDProjektRed"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#CDProjektPublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#ActionRPGGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PlayStation5"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#XboxSeriesXS"/>
+    <hasCharacter rdf:resource="https://example.org/videogame-industry#V"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#SinglePlayerMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Puzzle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">Головоломка</rdfs:label>
+    <rdfs:label xml:lang="en">Puzzle</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Character">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Персонаж</rdfs:label>
+    <rdfs:label xml:lang="en">Character</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#TacticalShooter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Shooter"/>
+    <rdfs:label xml:lang="ru">Тактический шутер</rdfs:label>
+    <rdfs:label xml:lang="en">TacticalShooter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Studio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Студия-разработчик</rdfs:label>
+    <rdfs:label xml:lang="en">Studio</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Cooperative">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Multiplayer"/>
+    <rdfs:label xml:lang="ru">Кооперативный режим</rdfs:label>
+    <rdfs:label xml:lang="en">Cooperative</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#MultiplayerMode">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Multiplayer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Многопользовательская игра</rdfs:label>
+    <rdfs:label xml:lang="en">MultiplayerMode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#appearsIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#Character"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#hasCharacter"/>
+    <rdfs:label xml:lang="en">appearsIn</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#TheWitcher3">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">The Witcher 3: Wild Hunt</rdfs:label>
+    <rdfs:label xml:lang="en">TheWitcher3</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#CDProjektRed"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#CDProjektPublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#ActionRPGGenre"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#AdventureGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PlayStation5"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#XboxSeriesXS"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#NintendoSwitch"/>
+    <hasCharacter rdf:resource="https://example.org/videogame-industry#Geralt"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#SinglePlayerMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#ActionRPG">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#RPG"/>
+    <rdfs:label xml:lang="ru">Action RPG</rdfs:label>
+    <rdfs:label xml:lang="en">ActionRPG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Dota2">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Dota 2</rdfs:label>
+    <rdfs:label xml:lang="en">Dota2</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#Valve"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#ValvePublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#MOBA_Genre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#MultiplayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#CompetitiveMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Multiplayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#GameMode"/>
+    <rdfs:label xml:lang="ru">Многопользовательский режим</rdfs:label>
+    <rdfs:label xml:lang="en">Multiplayer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#hasGenre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">имеет жанр</rdfs:label>
+    <rdfs:label xml:lang="en">hasGenre</rdfs:label>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#genreOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#genreOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#hasGenre"/>
+    <rdfs:label xml:lang="en">genreOf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#publishesGame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#publishedBy"/>
+    <rdfs:label xml:lang="en">publishesGame</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#MojangStudios">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Mojang Studios</rdfs:label>
+    <rdfs:label xml:lang="en">MojangStudios</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#CooperativeMode">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Cooperative"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Кооператив</rdfs:label>
+    <rdfs:label xml:lang="en">CooperativeMode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#CompetitiveMode">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Competitive"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Соревновательный режим</rdfs:label>
+    <rdfs:label xml:lang="en">CompetitiveMode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#V">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Character"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Ви</rdfs:label>
+    <rdfs:label xml:lang="en">V</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#ValvePublisher">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Valve</rdfs:label>
+    <rdfs:label xml:lang="en">ValvePublisher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#SandboxGenre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Sandbox"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Песочница</rdfs:label>
+    <rdfs:label xml:lang="en">SandboxGenre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#PC">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">PC</rdfs:label>
+    <rdfs:label xml:lang="en">PC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#XboxSeriesXS">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Xbox Series X/S</rdfs:label>
+    <rdfs:label xml:lang="en">XboxSeriesXS</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#PlayStation5">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">PlayStation 5</rdfs:label>
+    <rdfs:label xml:lang="en">PlayStation5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Shooter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">Шутер</rdfs:label>
+    <rdfs:label xml:lang="en">Shooter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#TacticalShooterGenre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#TacticalShooter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Тактический шутер</rdfs:label>
+    <rdfs:label xml:lang="en">TacticalShooterGenre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#FromSoftware">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">FromSoftware</rdfs:label>
+    <rdfs:label xml:lang="en">FromSoftware</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#MojangPublisher">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Mojang Studios</rdfs:label>
+    <rdfs:label xml:lang="en">MojangPublisher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Adventure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">Приключение</rdfs:label>
+    <rdfs:label xml:lang="en">Adventure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Chell">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Character"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Челл</rdfs:label>
+    <rdfs:label xml:lang="en">Chell</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#hasCharacter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#Character"/>
+    <rdfs:label xml:lang="ru">содержит персонажа</rdfs:label>
+    <rdfs:label xml:lang="en">hasCharacter</rdfs:label>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#appearsIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#SinglePlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#GameMode"/>
+    <rdfs:label xml:lang="ru">Одиночный режим</rdfs:label>
+    <rdfs:label xml:lang="en">SinglePlayer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#BandaiNamco">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Bandai Namco Entertainment</rdfs:label>
+    <rdfs:label xml:lang="en">BandaiNamco</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Platform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Игровая платформа</rdfs:label>
+    <rdfs:label xml:lang="en">Platform</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#CounterStrike2">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Counter-Strike 2</rdfs:label>
+    <rdfs:label xml:lang="en">CounterStrike2</rdfs:label>
+    <releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</releaseYear>
+    <developedBy rdf:resource="https://example.org/videogame-industry#Valve"/>
+    <publishedBy rdf:resource="https://example.org/videogame-industry#ValvePublisher"/>
+    <hasGenre rdf:resource="https://example.org/videogame-industry#TacticalShooterGenre"/>
+    <availableOn rdf:resource="https://example.org/videogame-industry#PC"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#MultiplayerMode"/>
+    <hasMode rdf:resource="https://example.org/videogame-industry#CompetitiveMode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#NintendoSwitch">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Platform"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Nintendo Switch</rdfs:label>
+    <rdfs:label xml:lang="en">NintendoSwitch</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#MOBA_Genre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#MOBA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">MOBA</rdfs:label>
+    <rdfs:label xml:lang="en">MOBA_Genre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#VideoGame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Видеоигра</rdfs:label>
+    <rdfs:label xml:lang="en">VideoGame</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Valve">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Valve</rdfs:label>
+    <rdfs:label xml:lang="en">Valve</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#SinglePlayerMode">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#SinglePlayer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Одиночная игра</rdfs:label>
+    <rdfs:label xml:lang="en">SinglePlayerMode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#Publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="ru">Издатель</rdfs:label>
+    <rdfs:label xml:lang="en">Publisher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#HeroShooter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Shooter"/>
+    <rdfs:label xml:lang="ru">Геройский шутер</rdfs:label>
+    <rdfs:label xml:lang="en">HeroShooter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#ActionRPGGenre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#ActionRPG"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Action RPG</rdfs:label>
+    <rdfs:label xml:lang="en">ActionRPGGenre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#CDProjektPublisher">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Publisher"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">CD Projekt</rdfs:label>
+    <rdfs:label xml:lang="en">CDProjektPublisher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#RPG">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/videogame-industry#Genre"/>
+    <rdfs:label xml:lang="ru">Ролевая игра</rdfs:label>
+    <rdfs:label xml:lang="en">RPG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#AdventureGenre">
+    <rdf:type rdf:resource="https://example.org/videogame-industry#Adventure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ru">Приключение</rdfs:label>
+    <rdfs:label xml:lang="en">AdventureGenre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://example.org/videogame-industry#developedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://example.org/videogame-industry#VideoGame"/>
+    <rdfs:range rdf:resource="https://example.org/videogame-industry#Studio"/>
+    <rdfs:label xml:lang="ru">разработана студией</rdfs:label>
+    <rdfs:label xml:lang="en">developedBy</rdfs:label>
+    <owl:inverseOf rdf:resource="https://example.org/videogame-industry#developsGame"/>
+  </rdf:Description>
+</rdf:RDF>
